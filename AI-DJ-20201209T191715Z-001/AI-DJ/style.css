@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body{
+    background-size: cover;
+    font-family: 'Bangers', cursive;
+}
+.copy_right_footer{
+    font-size: large;
+    position:fixed;
+    color: white;
+    animation: bgcolor 10s infinite;
+    bottom: 0;
+    width:100%;
+    background-color: grey;
+    line-height: 3;
+    letter-spacing: 1;
+    text-align: center;
+}
+
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0;
+    animation: bgcolor 10s infinite;
+}
+@keyframes bgcolor{
+    0% {
+        background-color: #45a3e5
+    }
+  
+    30% {
+        background-color: #66bf39
+    }
+  
+    60% {
+        background-color: #eb670f
+    }
+  
+    90% {
+        background-color: #f35
+    }
+  
+    100% {
+        background-color: #864cbf
+    }
+}
+.note{
+    font-size: 15px;
+    color: black;
+}
+.div_speed
+{
+    float: left;    
+}
+.div_speed_image{
+    width: 200px;
+    border-radius: 100px;
+
+}
+#speed
+{
+    font-size: 23px;
+    margin: 15px;
+
+}
+.div_volume
+{
+    float: right;    
+}
+.div_volume_image{
+    width: 200px;
+    border-radius: 100px;
+
+}
+#volume
+{
+    font-size: 23px;
+    margin: 15px;
+
+}
+.play_button{
+    width: 130px;
+    font-size: 25px;
+}
+canvas{
+    border: 5px solid white;
+    border-radius: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 40px;
+}
+
+p{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+#speed {
+
+    background: -webkit-linear-gradient(white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+#volume {
+    background: -webkit-linear-gradient(white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #2ecc71;
+    }
+    50%{
+        color: #f1c40f;
+    }
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
